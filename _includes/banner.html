@@ -1,0 +1,20 @@
+<div id="banner" class="banner">
+    <div class="sentence1"> {{ site.banner_setence1 }} </div>
+    <div class="sentence2"> {{ site.banner_setence2 }} </div>
+    <div class="main_slogan"> {{ site.main_slogan }} </div>
+    <!-- <div class="secondary_slogan"> {{ site.secondary_slogan }} </div> -->
+    <div class="banner-button">
+      <button class="btn">
+        <a href="mailto:{{ site.email }}"><i class="fa fa-thumbs-o-up"></i>&nbsp;GET IN TOUCH</a>
+      </button>
+    </div>
+    <div class="banner_decor decor1">
+    	<span>{% include banner_decor1.html %}</span>
+    </div>
+    <div class="banner_decor decor2">
+    	<span>{% include banner_decor2.html %}</span>
+    </div>
+    <div class="banner_decor decor3">
+    	<span>{% include banner_decor3.html %}</span>
+   </div>
+ </div>

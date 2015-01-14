@@ -1,0 +1,12 @@
+- text_draw: '>>>>Droid'
+  title: Native Android
+  image: android_dev_draw_android_dev.png
+  content: service-android-dev.md
+- text_draw: 'http://.*.com' 
+  title: API and Backend 
+  image: android_dev_draw_api_dev.png
+  content: service-api-dev.md
+- text_draw: '—->®'
+  title:  Security 
+  image: android_dev_draw_firewall.png
+  content: service-security.md

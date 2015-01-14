@@ -1,0 +1,151 @@
+.works .heading {
+  margin-top: 40px;
+}
+.works {
+    width: 100%;
+    // background-color: #F2F1EF;
+    padding: 0px 20px 20px 20px;
+}
+.work_row {
+    display: block;
+    margin-bottom: 0px;
+    margin-top: 30px;
+    text-align: left;
+}
+.work .col-md-4{
+    padding-left:15px;
+    padding-right:15px;
+    span{
+      padding-left:20px;
+    }
+
+}
+.work_image {
+  text-align:  center;
+  width: 100%;
+  margin-bottom: 10px;
+  border-radius: 30px;
+  transition: 0.5s ease;
+  &:hover{
+  }
+}
+.work_image img{
+    width: 100%;
+
+
+}
+.work_image:hover .work_info{
+      opacity: 0.9;
+}
+
+.work_links{
+    margin-top: 10px;
+    text-align: center;
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.btn_work_image {
+    color: #FFF;
+    background-color: rgba(63,195,128,1.0);
+    border:  1px solid rgba(63,195,128,1.0);
+    transition:  0.4s ease ;
+
+}
+.btn_work_image:hover {
+    background-color: $primary-color;
+   border:  1px solid $primary-color;
+       color: #FFF;
+}
+
+.work_title
+{
+    letter-spacing: 1.3px;
+    font-size:  15px;
+    line-height: 1.2;
+    font-weight: 400;
+    text-align: left;
+    color: #212121;
+    display: block;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.work_desc {
+  padding-left:20px;
+  padding-right:20px;
+  p {
+    font-size:  13px;
+    color: #777;
+    text-align: justify;
+    font-weight: 200;
+    text-align: justified;
+    line-height: 1.5;
+
+  }
+  h3{
+    font-size: 18px;
+    color: #212121;
+    font-weight: 400;
+  }
+  ul {
+    color: #212121;
+    font-size: 12px;
+    letter-spacing: 0.03em;
+    list-style-type: square;;
+    list-style-position: outside;
+      font-weight: 400;
+      line-height: 1.8;
+      margin-left:20px;
+    li {
+    }
+  }
+  a{
+    color: $primary-color;
+    font-weight: 500;
+  }
+}
+
+
+/* Start of Pagination */
+
+#pager {
+  text-align: center;
+  width: 100%;
+}
+
+// ul.pagination > li {
+//     border-radius: 10px!important;
+//   width:10px!important;
+//   height:10px!important;
+// }
+
+ul.pagination > li > a {
+  background-color: #FFFFFF;
+  color:  $primary-color;
+  &:hover{
+    color:  $primary-color;
+  }
+}
+
+ul.pagination > li.active > a {
+  background-color: $primary-color;
+  border: 1px solid $primary-color;
+
+  &:hover{
+    border: 1px solid $primary-color;
+      background-color: transparentize($primary-color, 0.25);
+  }
+}
+
+// ul..pagination > li.active > a{
+//     background-color: $primary-color;
+// }
+
+// ul.pagination {
+//       li.active {
+//         background-color: #121232;
+//       }
+//     }
+// }

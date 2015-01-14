@@ -1,0 +1,101 @@
+.contact {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-top: 1px solid #eee;
+}
+
+#contact_info h2 {
+    font-size: 20px!important;
+}
+
+.contact_desc {
+       font-size: 14px !important;
+       color: #878787;
+       line-height: 1.4;
+       font-weight: 200;
+       letter-spacing: 0.5px;
+}
+
+.contact h2{
+    font-family: $primary-font-family,sans-serif;
+    color: $primary-color;
+    font-weight: 500;
+    font-size: 24px;
+    letter-spacing: 1px;
+}
+.contact_but{
+  text-align: center;
+  color: #EEEEEE;
+  text-align: center;
+  position: relative;
+  margin-bottom: 40px;
+  img{
+    width: 50px;
+    height: 50px;
+    opacity: 0.6;
+    margin-bottom: 10px;
+  }
+}
+
+.contact_email {
+  line-height: 2.0;
+  margin-bottom: 0px!important;
+  font-size: 13px;
+  color: #000;
+  a{
+    color: $primary-color;
+    font-family: $primary-font-family,sans-serif;
+    font-size: 14px;
+    margin-right: 8px;
+    transition: 0.5s ease;
+    &:hover{
+      text-decoration: none;
+      color: #CCC;
+    }
+  }
+  &:hover{
+    color: #CCC;
+  }
+}
+.btn-emailme {
+    background-color: darken($primary-color,2);
+}
+
+.ourlinks h2 {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.ourlinks ul {
+     text-align:  center;
+     margin: 0px;
+     list-style-type: none;
+}
+
+.ourlinks li > a {
+     color: #CCC;
+     font-weight: 600;
+     letter-spacing: 1px;
+     font-size: 16px;
+     letter-spacing: 1px;
+     text-decoration: none;
+     &:hover{
+       color: #444;
+       text-decoration: none;
+
+     }
+}
+
+@media (max-width: $max-width-phone) {
+  .ourlinks{
+    margin-bottom: 20px;
+  }
+  .contact_but{
+    top:0px;
+    margin-top: 40px;
+    margin-bottom: 70px;
+  }
+}

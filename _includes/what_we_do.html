@@ -1,0 +1,16 @@
+
+<div id="services">
+<div class="heading">
+    <h2 >Our Services</h2 >
+    <p >Connect people, work together on projects and share knowledge in a better way.</p >
+</div>
+{% for service in site.data.services %}   
+<div class="row service">
+    <div class="col-md-6  service-image">
+        <img src="{{ service.image | prepend: "/images/" |prepend: site.baseurl }}">
+        <h2>{{ service.title}} </h2>
+        <p>  {{ service.description}}</p>
+    </div>  
+</div>
+{% endfor %}
+</div>

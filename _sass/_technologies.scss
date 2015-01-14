@@ -1,0 +1,47 @@
+#technologies {
+    .heading {
+        margin-bottom: 40px;
+        border-bottom: 0px solid;
+        h2 {
+
+        }
+    }
+
+}
+ .console_tech {
+
+}
+.console_tech div{
+
+}
+
+.console_tech pre{
+    border-top: 32px solid #eee;
+    border-left: 12px solid #eee;
+    border-right: 12px solid #eee;
+    border-bottom: 12px solid #eee;
+    border-radius: 7px;
+    background-color: #343434;
+}
+.console_tech code{
+    margin: 0px;
+    padding: 0px;
+    white-space: pre;
+    font-family: $monospace-font-family,monospace;
+    background-color: transparent;
+    border:  0px;
+    font-size: 16px;
+    color: rgba(128,235,178,1);
+    line-height: 1.4;
+}
+
+.console_tech code:hover{
+
+}
+
+@media (max-width: $max-width-phone) {
+  .console_tech code{
+    font-size:10px;
+  }
+
+}

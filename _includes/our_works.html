@@ -1,0 +1,51 @@
+<script>
+  var activePage=0;
+  window.onload = function()
+  {
+    pageNumbers=$(".work_row").length;
+    for(var i=0;i<pageNumbers;i++){
+        $("#pagination").append(
+            "<li><a class='disabled'  onclick='showPage("+i+");'>"+(i+1)+"</a></li>"
+         );
+    }
+    showPage(0);
+  }
+
+  window.showPage =  function(index)
+  {
+    $(".work_row").hide();
+    $("#pagination").children("li").removeClass("active");
+    $("#pagination").children("li").eq(index).addClass("active");
+    $(".work_row").eq(index).show();
+  }
+ </script>
+
+<div class="works" id="showroom">
+  <div class="heading">
+    <h2>Showroom</h2 >
+    <p>A quick window to our most recent works and collaborations</p>
+  </div>
+{% for work in site.data.our_works %}
+    {% assign mod = forloop.index0 | modulo: 3  %}
+    {% if  mod == 0 %}
+        <div class="row work_row">
+    {% endif %}
+        <div class="work">
+            <div class="col-md-4">
+                <img src="{{work.image}}" border="0" class="work_image">
+                <span class="work_title">{{work.title}}</span>
+                <div class="work_desc">
+                {% capture my_include %}{% include {{ work.content}}  %}{% endcapture %}
+                {{ my_include | markdownify }}
+                </div>
+            </div>
+        </div>
+    {% if mod == 2 or  forloop.last %}
+        </div>
+    {% endif %}
+{% endfor %}
+<div id="pager">
+    <ul id="pagination" class="pagination">
+    </ul>
+</div>
+</div>
